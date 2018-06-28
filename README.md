@@ -6,11 +6,11 @@ This exporter can be used to collect metrics from one or more EclipseLink Sessio
 <p>
  Usage example for a single session:
  <pre>
- new prometheus.exporter.EclipseLinkStatisticsCollector(session, "name").register();
+ new EclipseLinkStatisticsCollector(session, "name").register();
  </pre>
  Usage example for multiple sessions:
  <pre>
- new prometheus.exporter.EclipseLinkStatisticsCollector()
+ new EclipseLinkStatisticsCollector()
      .add(session1, "name1")
      .add(session2, "name2")
      .register();
